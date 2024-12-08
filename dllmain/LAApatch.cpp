@@ -30,7 +30,7 @@ uint32_t calc_checksum(uint32_t checksum, void* data, int length) {
 
 void LAACheck()
 {
-	static bool LAAChecked = false;
+	static bool LAAChecked = true;
 	if (LAAChecked)
 		return; // user was prompted/EXE checked already, exit out
 
